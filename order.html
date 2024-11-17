@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Flower Shop
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <main>
+        <h1>WELCOME TO Flower Shop</h1>
+        <form action="#" method="POST">
+            <h3>รายละเอียดลูกค้า</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <h3>รายละเอียดการสั่งซื้อ</h3>
+            <label for="product">Select Product:</label>
+            <select id="product" name="product" required>
+                <option value="กล้วยด่าง">กล้วยด่าง - 60,00฿</option>
+                <option value="กล้วยไม้">กล้วยด่าง - 150฿</option>
+                <option value="ชวนชม">ชวนชม - 500฿</option>
+                <option value="บอนไซ">บอนไซ - 350฿</option>
+                <option value="บัวหลวง">บัวหลวง - 239฿</option>
+                <option value="โกสน">โกสน - 299฿</option>
+                <option value="โป้ยเซียน">โป้ยเซียน - 350฿</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+    <footer>
+        &copy; Taweesak Supab
+    </footer>
+</body>
+</html>
