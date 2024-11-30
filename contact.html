@@ -4,6 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=New+Amsterdam&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mycolor: {
+                            101: '#1F4529'
+                        },
+                        menucolor:{
+                            1:'#B8F7D4',
+                            2:'#6FE7DB',
+                            3:'#7FA6EE',
+                            4:'#835AF1',
+                        },
+                        fontFamily:{
+                            'title':['Mulish','serif'],
+                            'content':['New Amsterdam', 'sans-serrif']
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,10 +39,10 @@
             Flower Shop
         </div>
         <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="product.html">Products</a>
-            <a href="order.html">Order</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html"class="text-menucolor-1 ">Home</a>
+            <a href="product.html"class="text-menucolor-2 ">Products</a>
+            <a href="order.html"class="text-menucolor-3 ">Order</a>
+            <a href="contact.html"class="text-menucolor-4 ">Contact</a>
         </div>
     </nav>
     
@@ -34,7 +61,7 @@
                 <button type="submit">Send</button>
             </form>
     </main>
-    <footer>
+    <footer class="text-2xl text-mycolor-101">
         &copy; Taweesak Supab
     </footer>
 </body>

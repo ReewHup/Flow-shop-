@@ -4,6 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=New+Amsterdam&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mycolor: {
+                            101: '#1F4529'
+                        },
+                        menucolor:{
+                            1:'#B8F7D4',
+                            2:'#6FE7DB',
+                            3:'#7FA6EE',
+                            4:'#835AF1',
+                        },
+                        product:{
+                            10:'#A9ECA2',
+                            11:'#ABCB89',
+                            12:'#064420',
+                            13:'#D2DE32',
+                            14:'#016A70',
+                            15:'#E6FF94'
+                        },
+                        fontFamily:{
+                            'title':['Mulish','serif'],
+                            'content':['New Amsterdam', 'sans-serrif']
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,54 +48,54 @@
             Flower Shop
         </div>
         <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="product.html">Products</a>
-            <a href="order.html">Order</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html"class="text-menucolor-1 ">Home</a>
+            <a href="product.html"class="text-menucolor-2 ">Products</a>
+            <a href="order.html"class="text-menucolor-3 ">Order</a>
+            <a href="contact.html"class="text-menucolor-4 ">Contact</a>
         </div>
     </nav>
     
     <main id="content">
-            <h1>Our Products</h1>
+            <h1 class="text-3xl text-mycolor-101 border-2 border-product-12 bg-product-15 ">Our Products</h1>
             <div class="product-list">
                 <div class="product">
                     <img src="img/กล้วยด่าง.png" alt="กล้วยด่าง">
-                    <h3>กล้วยด่าง</h3>
-                    <p>60,00฿</p>
+                    <h3 class="bg-product-13">กล้วยด่าง</h3>
+                    <p class="bg-product-11 border-2 border-product-12 hover:bg-product-14">60,00฿</p>
                 </div>
                 <div class="product">
                     <img src="img/กล้วยไม้.png" alt="กล้วยไม้">
-                    <h3>กล้วยไม้</h3>
-                    <p>150฿</p>
+                    <h3 class="bg-product-13">กล้วยไม้</h3>
+                    <p class="bg-product-11 border-2 border-product-12 hover:bg-product-14">150฿</p>
                 </div>
                 <div class="product">
                     <img src="img/ชวนชม.png" alt="ชวนชม">
-                    <h3>ชวนชม</h3>
-                    <p>500฿</p>
+                    <h3 class="bg-product-13">ชวนชม</h3>
+                    <p class="bg-product-11 border-2 border-product-12 hover:bg-product-14">500฿</p>
                 </div>
                 <div class="product">
                     <img src="img/บอนไซ.png" alt="บอนไซ">
-                    <h3>บอนไซ</h3>
-                    <p>350฿</p>
+                    <h3 class="bg-product-13">บอนไซ</h3>
+                    <p class="bg-product-11 border-2 border-product-12 hover:bg-product-14">350฿</p>
                 </div>
                 <div class="product">
                     <img src="img/บัวหลวง.png" alt="บัวหลวง">
-                    <h3>บัวหลวง</h3>
-                    <p>239฿</p>
+                    <h3 class="bg-product-13">บัวหลวง</h3>
+                    <p class="bg-product-11 border-2 border-product-12 hover:bg-product-14">239฿</p>
                 </div>
                 <div class="product">
                     <img src="img/โกสน.png" alt="โกสน">
-                    <h3>โกสน</h3>
-                    <p>299฿</p>
+                    <h3 class="bg-product-13">โกสน</h3>
+                    <p class="bg-product-11 border-2 border-product-12 hover:bg-product-14">299฿</p>
                 </div>
                 <div class="product">
                     <img src="img/โป้ยเซียน.png" alt="โป้ยเซียน">
-                    <h3>โป้ยเซียน</h3>
-                    <p>350฿</p>
+                    <h3 class="bg-product-13">โป้ยเซียน</h3>
+                    <p class="bg-product-11 border-2 border-product-12 bor hover:bg-product-14">350฿</p>
                 </div>
             </div>
     </main>
-    <footer>
+    <footer class="text-2xl text-mycolor-101">
         &copy; Taweesak Supab
     </footer>
 </body>
